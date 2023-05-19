@@ -34,7 +34,7 @@ a {
 	--primary-color-active: #007dfa;
 	--danger: #ff2a2a;
 	--success: #4caf50;
-	--bg-color: #1e1e2f;
+	--bg-color: #1a0317;
 	--component-color: #27293d;
 	--text-color: #ffffff;
 	--border-radius: 15px;
@@ -54,17 +54,17 @@ button {
 	text-align: center;
 	text-transform: uppercase;
 	color: var(--text-color);
-	background-color: var(--primary-color);
+	background-color: #462e46;
 	border: none;
 	border-radius: var(--border-radius);
 	cursor: pointer;
-	box-shadow: var(--box-shadow-col-alt);
+	box-shadow: 0px 0px 10px 2px rgba(225, 223, 223, 0.2);
 	min-width: 90px;
 	justify-content: center;
 }
 
 button:hover {
-	background-color: var(--primary-color-hover);
+	background-color: #624162;
 }
 
 button:active {
@@ -83,15 +83,31 @@ input:focus {
 	border-color: var(--primary-color);
 }
 
+video {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+h1 {
+	color: white;
+	font-size: 50px;
+}
+
 /* Navbar starts here */
+.nav-container {
+	box-shadow: 0px 0px 10px 2px rgba(225, 223, 223, 0.2);
+}
+
 .nav {
 	position: relative;
 	display: flex;
 	height: 72px;
 	align-items: center;
 	flex-direction: row;
-	box-shadow: var(--box-shadow-col-alt);
-	background-color: var(--component-color);
+	/* box-shadow: var(--box-shadow-col-alt); */
+	box-shadow: 0px 0px 10px 2px rgba(225, 223, 223, 0.2);
+	background-color: var(--bg-color);
 }
 
 .nav .logo,
@@ -125,11 +141,150 @@ input:focus {
 /* Grid container */
 .grid-container {
 	display: grid;
-	grid-template-columns: 1fr 1fr; /* Two equal-width columns */
-	gap: 20px; /* Gap between columns */
+	grid-template-columns: 0.8fr 1.2fr;
+	height: 89vh;
+	background-color: var(--bg-color);
+	padding: 27px;
 }
 
 .grid-item {
-	background-color: #f2f2f2;
+	background-color: #462e46;
 	padding: 20px;
+}
+
+.grid-container :first-child {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* box-shadow: inset -6px 4px 13px 4px #1a0317; */
+	/* border-radius: 50%; */
+	border-top-right-radius: 36%;
+	border-bottom-left-radius: 36%;
+	padding: 6px;
+}
+
+.grid-container :last-child {
+	background-color: transparent;
+	box-shadow: none;
+}
+
+/* Left side container */
+.left-side-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+}
+
+.left-side-container .left-side-top {
+	height: 20%;
+	margin: 0px 9px;
+}
+
+.left-side-container .left-side-bottom {
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	padding: 27px 15px;
+}
+
+.left-side-container .left-side-top .left-side-item-one {
+	display: flex;
+	background: transparent;
+	box-shadow: none;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.left-side-container .left-side-top .left-side-item-two {
+	display: flex;
+	background: transparent;
+	box-shadow: none;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.left-side-container .left-side-top .left-side-item-one,
+.left-side-item-two .label-text {
+	box-shadow: none;
+	color: white;
+	font-size: larger;
+}
+
+.left-side-container .left-side-top .left-side-item-one .switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+	border-radius: 34px;
+	border: 1px solid;
+	border-color: white;
+}
+
+.left-side-container .left-side-top .left-side-item-one .switch input {
+	display: none;
+}
+
+.left-side-container .left-side-top .left-side-item-one .switch .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #462e46;
+	transition: 0.4s;
+	border-radius: 34px;
+}
+
+.left-side-container .left-side-top .left-side-item-one .switch .slider:before {
+	position: absolute;
+	content: '';
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	transition: 0.4s;
+	border-radius: 50%;
+}
+
+.left-side-container
+	.left-side-top
+	.left-side-item-one
+	.switch
+	input:checked
+	+ .slider {
+	background-color: var(--bg-color);
+}
+
+.left-side-container
+	.left-side-top
+	.left-side-item-one
+	.switch
+	input:checked
+	+ .slider:before {
+	transform: translateX(26px);
+}
+
+.search-container {
+	position: relative;
+	display: inline-block;
+}
+
+.search-container input {
+	padding-left: 30px;
+	border-radius: 15px;
+	width: 300px;
+}
+
+.search-container .fa-search {
+	position: absolute;
+	top: 44%;
+	left: 10px; /* Adjust the position as needed */
+	transform: translateY(-50%);
+	color: white; /* Adjust the color as needed */
 }
