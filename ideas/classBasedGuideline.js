@@ -75,5 +75,7 @@ weatherApp.init();
         - import function into the class  
     - 3. Have the class methods render the required information 
     - 4. Persist all the internal state (if any) to localStorage from the class inside the index for now. 
+    - 5. Build something based off this glassmorphic design
+        - https://www.behance.net/gallery/165563263/Weather-app-prilozhenie-dlja-pogody
 
 */

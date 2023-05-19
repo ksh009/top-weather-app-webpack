@@ -1,0 +1,135 @@
+/* Reset default */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	color: inherit;
+	background-color: transparent;
+	border: none;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	line-height: 1.5;
+	font-family: 'Norse Bold', sans-serif;
+	overflow: auto;
+	width: 100%;
+	height: fit-content;
+}
+
+a {
+	text-decoration: none;
+}
+
+:root {
+	--primary-color: #1d8cf8;
+	--primary-color-hover: #3f99f2;
+	--primary-color-active: #007dfa;
+	--danger: #ff2a2a;
+	--success: #4caf50;
+	--bg-color: #1e1e2f;
+	--component-color: #27293d;
+	--text-color: #ffffff;
+	--border-radius: 15px;
+	--border-radius-alt: 5px;
+	--border-color-primary: #ccc;
+	--box-shadow-col: rgb(0 0 0 / 16%) 0px 0px 6px, rgb(0 0 0 / 23%) 0px 0px 6px;
+	--box-shadow-col-alt: 0 1px 20px 0 rgb(0 0 0 / 10%);
+	--box-shadow-light: 0 2px 4px 0 rgba(204, 204, 204, 0.2);
+}
+
+button {
+	display: flex;
+	flex-direction: row;
+	padding: 7px 9px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--text-color);
+	background-color: var(--primary-color);
+	border: none;
+	border-radius: var(--border-radius);
+	cursor: pointer;
+	box-shadow: var(--box-shadow-col-alt);
+	min-width: 90px;
+	justify-content: center;
+}
+
+button:hover {
+	background-color: var(--primary-color-hover);
+}
+
+button:active {
+	border-color: var(--primary-color-active);
+}
+
+input {
+	padding: 5px;
+	margin-bottom: 10px;
+	border: 1px solid;
+	background-color: var(--bg-color);
+	color: var(--text-color);
+}
+
+input:focus {
+	border-color: var(--primary-color);
+}
+
+/* Navbar starts here */
+.nav {
+	position: relative;
+	display: flex;
+	height: 72px;
+	align-items: center;
+	flex-direction: row;
+	box-shadow: var(--box-shadow-col-alt);
+	background-color: var(--component-color);
+}
+
+.nav .logo,
+.auth {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+	padding: 0px 27px;
+	color: var(--text-color);
+}
+
+.nav .logo {
+	justify-content: flex-start;
+}
+
+.nav .logo a {
+	font-size: 36px;
+	font-weight: bolder;
+}
+
+.nav .auth {
+	justify-content: flex-end;
+}
+
+.nav .auth button {
+	margin-left: 15px;
+}
+
+/* Grid container */
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+	gap: 20px; /* Gap between columns */
+}
+
+.grid-item {
+	background-color: #f2f2f2;
+	padding: 20px;
+}
