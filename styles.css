@@ -95,6 +95,13 @@ h1 {
 	font-size: 50px;
 }
 
+.vertical-rule {
+	width: 1px;
+	height: 162px; /* Adjust the height as needed */
+	background-color: #ccc;
+	margin: 0px 18px;
+}
+
 /* Navbar starts here */
 .nav-container {
 	box-shadow: 0px 0px 10px 2px rgba(225, 223, 223, 0.2);
@@ -271,21 +278,163 @@ h1 {
 	transform: translateX(26px);
 }
 
-.search-container {
+.left-side-container .left-side-top .left-side-item-two .search-container {
 	position: relative;
 	display: inline-block;
 }
 
-.search-container input {
+.left-side-container
+	.left-side-top
+	.left-side-item-two
+	.search-container
+	input {
 	padding-left: 30px;
 	border-radius: 15px;
 	width: 300px;
 }
 
-.search-container .fa-search {
+.left-side-container
+	.left-side-top
+	.left-side-item-two
+	.search-container
+	.fa-search {
 	position: absolute;
 	top: 44%;
 	left: 10px; /* Adjust the position as needed */
 	transform: translateY(-50%);
 	color: white; /* Adjust the color as needed */
+}
+
+/* Right side container */
+.right-side-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	height: 100%;
+}
+
+.right-side-container .right-side-item-one,
+.right-side-item-two {
+	width: 100%;
+}
+
+.right-side-container .right-side-item-one {
+	height: 30%;
+	display: flex;
+	flex-direction: row;
+}
+
+.right-side-container .right-side-item-one .item-one-header-and-nav {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	padding: 0;
+	color: white;
+}
+
+.right-side-container .right-side-item-one .item-one-icon {
+	display: flex;
+	flex-direction: row;
+	color: yellow;
+}
+
+.right-side-container
+	.right-side-item-one
+	.item-one-header-and-nav
+	.nav-date-picker {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 80%;
+	align-items: center;
+}
+
+.right-side-container
+	.right-side-item-one
+	.item-one-header-and-nav
+	.nav-date-picker
+	span {
+	width: 10%;
+	cursor: pointer;
+}
+
+.right-side-container
+	.right-side-item-one
+	.item-one-header-and-nav
+	.nav-date-picker
+	span
+	i:hover {
+	scale: 1.2;
+}
+
+.right-side-container
+	.right-side-item-one
+	.item-one-header-and-nav
+	.nav-date-picker
+	p {
+	font-size: 1.8rem;
+	text-align: center;
+	width: 80%;
+	padding-right: 6%;
+	opacity: 0.7;
+}
+
+.right-side-container .right-side-item-one .item-one-icon {
+	display: flex;
+	width: 20%;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.right-side-container .right-side-item-two {
+	height: 70%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 27px;
+}
+
+.right-side-container .right-side-item-two .weather-text-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 50px;
+	background-color: #462e46;
+	padding: 18px;
+	width: 100%;
+}
+
+.right-side-container
+	.right-side-item-two
+	.weather-text-container
+	.weather-value {
+	font-size: 180px;
+}
+
+.right-side-container
+	.right-side-item-two
+	.weather-text-container
+	.weather-value-celcius,
+.weather-value-fahrenheid {
+	cursor: pointer;
+}
+
+.right-side-container
+	.right-side-item-two
+	.weather-text-container
+	.weather-value-celcius:hover {
+	opacity: 0.7;
+}
+
+.right-side-container
+	.right-side-item-two
+	.weather-text-container
+	.weather-value-fahrenheid:hover {
+	opacity: 0.7;
 }
