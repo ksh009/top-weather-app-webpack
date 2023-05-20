@@ -364,6 +364,15 @@ h1 {
 	.item-one-header-and-nav
 	.nav-date-picker
 	span
+	i {
+	font-size: 27px;
+}
+
+.right-side-container
+	.right-side-item-one
+	.item-one-header-and-nav
+	.nav-date-picker
+	span
 	i:hover {
 	scale: 1.2;
 }
@@ -376,7 +385,6 @@ h1 {
 	font-size: 1.8rem;
 	text-align: center;
 	width: 80%;
-	padding-right: 6%;
 	opacity: 0.7;
 }
 
