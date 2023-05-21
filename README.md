@@ -8,6 +8,11 @@
 2. Partly Cloudy
    - https://www.pexels.com/video/person-walking-on-the-lake-bridge-8243194/
    - Ana Benet
+   - `NOTE - Compress a little more`
+3. Overcast
+   - https://www.pexels.com/video/time-lapse-footage-of-cloudy-sky-4511263/
+   - Yaroslav Shuraev
+   - `NOTE - Compress a little more`
 
 # Weather Icons
 
