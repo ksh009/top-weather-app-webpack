@@ -169,6 +169,7 @@ h1 {
 	border-top-right-radius: 36%;
 	border-bottom-left-radius: 36%;
 	padding: 6px;
+	max-height: 540px;
 }
 
 .grid-container :last-child {

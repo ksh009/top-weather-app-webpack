@@ -5,6 +5,9 @@
 1. Sunny Video
    - https://www.pexels.com/video/drone-footage-of-oceab-2256998/
    - Kelly
+2. Partly Cloudy
+   - https://www.pexels.com/video/person-walking-on-the-lake-bridge-8243194/
+   - Ana Benet
 
 # Weather Icons
 
