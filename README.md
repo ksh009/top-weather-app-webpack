@@ -9,3 +9,17 @@
 # Weather Icons
 
 https://fontawesome.com/search?c=weather&o=r
+
+# Weather States
+
+Clear
+Sunny
+Partly cloudy
+Mostly cloudy
+Overcast
+Rainy
+Snowy
+Sleet
+Hail
+Thunderstorm
+Tornado
